@@ -1,0 +1,8 @@
+language: node_js
+
+node_js:
+  - node
+
+script:
+  - make lint-css
+  - make lint-html
