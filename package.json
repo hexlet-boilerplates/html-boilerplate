@@ -12,11 +12,6 @@
     "stylelint-order": "^3.1.1",
     "surge": "^0.21.3"
   },
-  "scripts": {
-    "csslint": "./node_modules/.bin/stylelint ./src/styles/*.css",
-    "htmllint": "./node_modules/.bin/htmlhint ./src/*.html",
-    "deploy": "./node_modules/.bin/surge ./src/"
-  },
   "author": "Nikita Mikhaylov",
   "license": "ISC"
 }
