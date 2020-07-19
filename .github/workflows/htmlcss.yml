@@ -1,0 +1,42 @@
+# Name of workflow
+name: LayoutDesigner CI
+
+# Trigger the workflow on push or pull request
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+
+    # The type of machine to run the job on
+    runs-on: ubuntu-latest
+
+    strategy:
+      # Node versions list
+      matrix:
+        node-version: [14.x]
+
+    steps:
+        # Check-out repository under GitHub workspace
+        # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+        # Step's name
+      - name: Use Node.js ${{ matrix.node-version }}
+        # Configures the node version used on GitHub-hosted runners
+        # https://github.com/actions/setup-node
+        uses: actions/setup-node@v1
+        # The Node.js version to configure
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, build
+        # Install and build project
+        run: |
+          make install
+        # Add environment variables
+        env:
+          CI: true
+      - name: Run linter
+        # Run Linter
+        run: |
+          make lint
