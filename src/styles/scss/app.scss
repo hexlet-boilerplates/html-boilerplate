@@ -1,0 +1,18 @@
+@function rem($value) {
+  $result: ($value / $rem-base) * 1rem;
+
+  @return #{$result};
+}
+
+h1,
+.h1 {
+  font-size: rem(30px);
+
+  @include media("md") {
+    font-size: rem(45px);
+  }
+
+  @include media("lg") {
+    font-size: rem(60px);
+  }
+}
