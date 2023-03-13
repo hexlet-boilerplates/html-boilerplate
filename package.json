@@ -8,13 +8,11 @@
   },
   "main": "",
   "devDependencies": {
-    "htmlhint": "^1.1.0",
-    "stylelint": "^14.2.0",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^24.0.0",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.1.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-scss": "^4.4.0",
     "surge": "^0.23.1"
   },
   "author": "Nikita Mikhaylov",
