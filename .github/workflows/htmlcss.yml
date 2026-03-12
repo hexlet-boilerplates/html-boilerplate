@@ -15,7 +15,7 @@ jobs:
     strategy:
       # Node versions list
       matrix:
-        node-version: [18.x]
+        node-version: [24.x]
 
     steps:
         # Check-out repository under GitHub workspace
@@ -25,7 +25,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         # Configures the node version used on GitHub-hosted runners
         # https://github.com/actions/setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
