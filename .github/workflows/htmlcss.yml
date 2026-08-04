@@ -25,7 +25,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         # Configures the node version used on GitHub-hosted runners
         # https://github.com/actions/setup-node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
