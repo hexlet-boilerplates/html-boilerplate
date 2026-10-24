@@ -1,5 +1,13 @@
 # HTML/CSS Boilerplate
 
+## Requirements
+
+Нужен [mise](https://mise.jdx.dev), он ставит Node и остальные инструменты из `mise.toml`.
+
+```bash
+mise install
+```
+
 ## Setup
 
 ```bash
