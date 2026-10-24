@@ -41,4 +41,4 @@ jobs:
       - name: Run linter
         # Run Linter
         run: |
-          make lint
+          mise exec -- hk check --all

@@ -1,5 +1,6 @@
 install:
 	npm install
+	mise exec -- hk install --mise
 
 lint:
 	npx stylelint ./src/styles/*.css
